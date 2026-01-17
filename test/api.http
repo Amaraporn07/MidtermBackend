@@ -1,0 +1,36 @@
+###
+POST http://localhost:3000/api/customers
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "phone": "0812345678",
+  "address": "Bangkok"
+}
+
+###
+POST http://localhost:3000/api/categories
+Content-Type: application/json
+
+{
+  "name": "Electronics",
+  "description": "Electronic devices",
+  "status": "active"
+}
+
+###
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+  "id": "6722200001",
+  "name": "Notebook Pro",
+  "price": 35000,
+  "stock": 10,
+  "description": "High performance laptop",
+  "categoryId": 1
+}
+
+###
+GET http://localhost:3000/api/products
