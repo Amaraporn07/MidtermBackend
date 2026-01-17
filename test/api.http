@@ -1,4 +1,4 @@
-###
+### CREATE
 POST http://localhost:3000/api/products
 Content-Type: application/json
 
@@ -11,6 +11,26 @@ Content-Type: application/json
   "categoryId": 1
 }
 
-###
+### READ ALL
 GET http://localhost:3000/api/products
+
+### READ BY ID
+GET http://localhost:3000/api/products/6722200001
+
+### UPDATE
+PUT http://localhost:3000/api/products/6722200001
+Content-Type: application/json
+
+{
+  "name": "Notebook Pro X",
+  "price": 38000,
+  "stock": 8,
+  "description": "Upgraded model",
+  "categoryId": 1
+}
+
+### DELETE
+DELETE http://localhost:3000/api/products/6722200001
+
+
 
